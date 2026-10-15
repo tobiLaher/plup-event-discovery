@@ -1,0 +1,87 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Environment files
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+
+/example/
+
+# generated native folders
+/ios
+/android
+
+# Raw third-party Instagram data for local validation only. Never commit.
+ingestion/local/
+
+# Secrets and credentials of any kind (never commit; keep only *.example templates)
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+.env*.local
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+credentials.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+.npmrc
+.netrc
+
+# Supabase local state (never commit local credentials or database dumps)
+supabase/.temp/
+supabase/.branches/
+supabase/.env*
+*.dump
+
+# Local data, logs and tool state
+ingestion/local/
+*.log
+coverage/
+.eas/
+.idea/
+Thumbs.db
+# AI-assistant working files (kept locally, not part of the public project)
+.claude/
+CLAUDE.md
+AGENTS.md
